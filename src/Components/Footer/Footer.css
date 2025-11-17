@@ -46,7 +46,6 @@ footer {
 }
 
 .footer-selector {
-  text-align: center;
   width: 100px;
   height: 30px;
   font-size: 18px;
@@ -54,6 +53,7 @@ footer {
   margin-left: 20px;
   cursor: pointer;
   border: 1px solid gray;
+  padding: 0px 10px;
 }
 
 /* Footer Body */
@@ -67,12 +67,14 @@ footer {
 .information {
   flex-direction: column;
   align-items: flex-start;
+  
 }
 
 .information a {
   color: grey;
   margin-block: 7px;
   font-size: 15px;
+  text-align: left;
 }
 
 .footer-header {

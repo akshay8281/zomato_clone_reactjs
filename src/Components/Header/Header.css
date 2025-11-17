@@ -1,70 +1,96 @@
-.logo {
-  width: 120px;
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
+/* NAVBAR */
 .navBar {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.location {
-  font-size: 1.5rem;
-  color: red;
+.nav-left {
+  display: flex;
+  align-items: center;
 }
 
-.selection {
-  border: none;
-  font-size: 16px;
-  background: transparent;
-  outline: none;
-  cursor: pointer;
-  width: 100%;
+/* LOGO */
+.logo {
+  width: 300px;
+  max-width: 500px;
+  margin-right: 50px;
 }
 
-.select-wrapper {
+/* INPUT GROUP */
+.input-bar {
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: white;
-  box-shadow: 0 2px 5px rgb(190, 195, 196);
-  border-radius: 5px;
-  margin: 0px 0px 0px 30px;
-  padding: 12px 10px 12px 20px;
-}
-.selection {
-  width: 5rem;
-  font-size: 17px;
-  cursor: pointer;
 }
 
-.search {
-  font-size: 21px;
-  color: black;
+/* INPUT WRAPPER */
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+}
+
+/* LEFT ICON INSIDE INPUT */
+.icon-left {
   position: absolute;
-  padding: 15px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #e23636;
 }
 
-.searchBar {
-  width: 25rem;
-  box-shadow: 0 2px 5px rgb(190, 195, 196);
-  border: none;
-  padding: 12px 10px 12px 50px;
+/* SELECT BOX */
+.selection {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
   font-size: 16px;
   border: none;
   outline: none;
+  box-shadow: 0 2px 5px rgb(190 195 196);
+  background-color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* SEARCH BAR */
+.searchBar {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 5px rgb(190 195 196);
+  border-radius: 6px;
+  border: none;
+}
+
+/* RIGHT BUTTONS */
+.nav-right {
+  display: flex;
+  align-items: center;
 }
 
 .login-button {
-  padding: 12px;
-  border-radius: 10px;
-  font-size: 21px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 18px;
   color: grey;
+  text-decoration: none;
 }
 
 .login-button:active {
-  border-radius: 8px;
   border: 1.5px solid red;
 }
-
 /* Sub-nav */
 
 .sub-nav-header {
@@ -113,4 +139,3 @@
   color: #555555; /* grey text for inactive */
   border-bottom: none;
 }
-

@@ -6,56 +6,61 @@ export default function Header() {
   return (
     <>
       {/* NavBar */}
-      <nav>
-        <header>
+      <header>
+        <nav>
           <div className="container">
-            <div className="navBar flex ali jc-sb">
-              <div className="nav-left flex ali">
-                <div>
-                  <Link to="#">
-                    <img
-                      className="logo"
-                      src="assets/Asset_0.avif"
-                      alt="Logo"
-                    />
-                  </Link>
-                </div>
-                <div className="input-bar flex ali">
-                  <div className="select-wrapper po-rel">
-                    <i className="location fa-solid fa-location-dot"></i>
-                    <select className="selection" name="Select your City" id="">
+            <div className="navBar">
+              {/* LEFT SIDE */}
+              <div className="nav-left">
+                {/* LOGO */}
+                <Link to="/">
+                  <img
+                    className="logo"
+                    src="public/assets/Asset_0.avif"
+                    alt="Logo"
+                  />
+                </Link>
+
+                {/* INPUT GROUP */}
+                <div className="input-bar">
+                  {/* CITY DROPDOWN */}
+                  <div className="input-wrapper">
+                    <i className="fa-solid fa-location-dot icon-left"></i>
+
+                    <select className="selection">
                       <option value="Dholera">Dholera</option>
                       <option value="Rajkot">Rajkot</option>
                       <option value="Surat">Surat</option>
                       <option value="Baroda">Baroda</option>
                     </select>
                   </div>
-                </div>
-                <div>
-                  <i className="search fa-solid fa-magnifying-glass"></i>
-                  <input
-                    type="text"
-                    className="searchBar"
-                    placeholder="Search for restaurant, cuisine or a dish"
-                  />
+
+                  {/* SEARCH BAR */}
+                  <div className="input-wrapper">
+                    <i className="fa-solid fa-magnifying-glass icon-left"></i>
+
+                    <input
+                      type="text"
+                      className="searchBar"
+                      placeholder="Search for restaurant, cuisine or a dish"
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="nav-right login-btn flex ali">
-                <div>
-                  <Link className="login-button" to="/login">
-                    Log in
-                  </Link>
-                </div>
-                <div>
-                  <Link className="login-button" to="/signup">
-                    Sign Up
-                  </Link>
-                </div>
+
+              {/* RIGHT SIDE */}
+              <div className="nav-right">
+                <Link className="login-button" to="/login">
+                  Log in
+                </Link>
+                <Link className="login-button" to="/signup">
+                  Sign Up
+                </Link>
               </div>
             </div>
           </div>
-        </header>
-      </nav>
+        </nav>
+      </header>
 
       {/* Sub NavBar */}
 
@@ -67,7 +72,7 @@ export default function Header() {
                 <Link className="" to="/" target="_self">
                   <img
                     className="sub-nav-a-img"
-                    src="/assets/asset 1.avif"
+                    src="public/assets/asset 1.avif"
                     alt=""
                   />
                 </Link>
@@ -88,7 +93,7 @@ export default function Header() {
                 <Link className="" to="/dinning" target="_self">
                   <img
                     className="sub-nav-a-img"
-                    src="/assets/asset 2.avif"
+                    src="public/assets/asset 2.avif"
                     alt=""
                   />
                 </Link>

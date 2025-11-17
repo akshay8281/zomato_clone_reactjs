@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "https://akshay8281.github.io/zomato_clone_reactjs",
   "name": "zomato_clone_reactjs",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && cp dist/index.html dist/404.html",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
