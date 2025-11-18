@@ -44,11 +44,11 @@ export default function Footer() {
 
       <footer>
         <div className="container">
-          <div className="footer-header flex jc-sb">
+          <div className="footer-main flex jc-sb">
             <div className="footer-logo col-50">
               <img
                 className="footer-logo-img"
-                src="assets/Asset_0.avif"
+                src="public/assets/Asset_0.avif"
                 alt="Logo"
               />
             </div>
@@ -135,7 +135,7 @@ export default function Footer() {
                 <Link to="#">
                   <img
                     className="download-img"
-                    src="assets/Google Play.png"
+                    src="public/assets/GooglePay.png"
                     alt="Google Play"
                   />
                 </Link>
@@ -143,7 +143,7 @@ export default function Footer() {
                 <Link to="#">
                   <img
                     className="download-img"
-                    src="assets/App Store.png"
+                    src="public/assets/AppleStore.png"
                     alt="App Store"
                   />
                 </Link>

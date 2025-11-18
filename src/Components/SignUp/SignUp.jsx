@@ -18,9 +18,13 @@ export default function SignUp() {
             <span>
               <input className="input-checkBox" type="checkbox" />
             </span>
-            I agree to Zomato's
-            <Link to="#">Terms of Service, Privacy Policy</Link> and
-            <Link to="#">Content Policies</Link>
+            <span>
+              <p>
+                I agree to Zomato's
+                <Link to="#">Terms of Service, Privacy Policy</Link> and
+                <Link to="#">Content Policies</Link>
+              </p>
+            </span>
           </div>
 
           <button>Create Account</button>

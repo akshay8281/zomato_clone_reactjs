@@ -104,6 +104,276 @@ ul li {
 
 /* Media Query */
 
+
+@media (min-width: 320px) {
+  .container {
+    width: 300px;
+  }
+
+  .col-15 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .col-30 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .col-50 {
+    width: 100%;
+  }
+
+  .col-20 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .input-bar {
+    display: none;
+  }
+
+  .login-button {
+    font-size: 13px;
+  }
+
+  .sub-nav-a-1,
+  .sub-nav-a-2 {
+    padding: 22px;
+  }
+
+  .sub-nav-a-img {
+    width: 22px;
+  }
+
+  .sub-nav-a-text {
+    font-size: 17px;
+    margin-left: 15px;
+  }
+
+  .sub-nav-slots {
+    justify-content: center;
+  }
+
+  .nav-btn-main {
+    justify-content: center;
+  }
+
+  .sub-nav-btn {
+    margin: 0px 12px 12px 0px;
+    text-align: center;
+    padding: 5px;
+    font-size: 11px;
+  }
+
+  .slider-1,
+  .slider-2 {
+    margin-top: 0px;
+    padding-block: 20px;
+  }
+
+  .slider-1-container,
+  .slider-2-container {
+    margin-top: 10px;
+  }
+
+  .slider-1-cards h2,
+  .slider-2-cards h2,
+  .box-cards-main h2,
+  .explore-section-main h2 {
+    margin-block: 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .explore-section-main {
+    width: 70%x;
+    padding: 0 20px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .slider-1-round-img,
+  .slider-2-round-img {
+    width: 180px;
+  }
+
+  .card-container-box {
+    margin-block: 10px;
+  }
+
+  .card-container-img {
+    height: 140px;
+  }
+
+  .card-text p {
+    font-size: 13px;
+  }
+
+  .card-left-text h3 {
+    font-size: 16px;
+  }
+
+  .card-right-text h4 {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .explore-selection select {
+    margin-bottom: 15px;
+  }
+
+  .selectors {
+    padding: 10px 0px 10px 10px;
+    font-size: 1rem;
+  }
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+}
+
+  .footer-header {
+    text-align: center;
+  }
+
+  .footer-selection {
+    margin-block: 25px;
+    justify-content: center;
+  }
+
+  .footer-body-content {
+    margin-block: 15px;
+  }
+  
+  .information {
+    margin: 20px 10px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .scroll-icon {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* Media-Query 576 */
+
+@media (min-width: 576px) {
+  .container {
+    width: 520px;
+  }
+
+  .col-15 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .col-30 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .col-50 {
+    width: 100%;
+  }
+
+  .col-20 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .login-button {
+    font-size: 18px;
+  }
+
+  .sub-nav-a-1,
+  .sub-nav-a-2 {
+    padding: 25px;
+  }
+
+  .sub-nav-a-img {
+    width: 25px;
+  }
+
+  .sub-nav-a-text {
+    font-size: 19px;
+  }
+
+  .sub-nav-slots {
+    justify-content: center;
+  }
+
+  .sub-nav-btn {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .slider-1-cards h2,
+  .slider-2-cards h2,
+  .box-cards-main h2,
+  .explore-section-main h2 {
+    font-size: 28px;
+  }
+
+  .slider-1-round-img,
+  .slider-2-round-img {
+    width: 260px;
+  }
+
+  .boxcards-slabs {
+    margin-top: 30px;
+  }
+
+  .card-container-box {
+    width: 350px;
+    margin: 12px auto;
+  }
+
+  .card-container-img {
+    height: 200px;
+  }
+
+  .footer-header {
+    text-align: center;
+  }
+
+  .footer-selection {
+    margin-block: 25px;
+    justify-content: center;
+  }
+
+  .footer-body-content {
+    margin-block: 15px;
+    margin: 0 auto;
+  }
+
+  .information {
+    margin: 20px 10px;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .scroll-icon {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 720px;
@@ -148,6 +418,7 @@ ul li {
   .explore-section-main h2 {
     font-size: 30px;
     margin-block: 30px;
+    text-align: center;
   }
 
   .slider-1-round-img,
@@ -172,10 +443,16 @@ ul li {
     text-align: left;
     align-items: center;
   }
+  .footer-logo {
+  display: flex;
+  justify-content: left;
+}
+
 
   .footer-logo-img {
     width: 180px;
   }
+
 
   .footer-selection {
     justify-content: flex-end;
@@ -184,12 +461,13 @@ ul li {
   .footer-body-content {
     margin-block: 15px;
     justify-content: space-evenly;
-  }
 
+  }
+  
   .information {
     margin: 20px 10px;
   }
-
+  
   .information a {
     font-size: 16px;
   }
@@ -369,7 +647,7 @@ ul li {
 
   .slider-1-round-img,
   .slider-2-round-img {
-    width: 100%;
+    width: 10%;
   }
 
   .information {
