@@ -13,39 +13,34 @@ export default function Delivery() {
     { image: "/zomato_clone_reactjs/assets/asset_6.avif", item: "Biryani", altName: "Biryani" },
     { image: "/zomato_clone_reactjs/assets/asset_8.avif", item: "Thali", altName: "Thali" },
     { image: "/zomato_clone_reactjs/assets/asset_7.avif", item: "Cake", altName: "Cake" },
-    // { image: "public/assets/asset_3.avif", item: "Pizza", altName: "Pizza" },
-    // { image: "public/assets/asset_4.avif", item: "Burger", altName: "Burger" },
-    // { image: "public/assets/asset_5.avif", item: "Sandwich", altName: "Sandwich" },
-    // { image: "public/assets/asset_6.avif", item: "Biryani", altName: "Biryani" },
-    // { image: "public/assets/asset_8.avif", item: "Thali", altName: "Thali" },
-    // { image: "public/assets/asset_7.avif", item: "Cake", altName: "Cake" },
+
   ];
   // Round Card Item 2
 
   const roundCardItem_2 = [
     {
-      image: "public/assets/asset 10.avif",
+      image: "/zomato_clone_reactjs/assets/asset 10.avif",
       item: "McDonald's",
       altName: "McDonald's",
     },
     {
-      image: "public/assets/asset 11.avif",
+      image: "/zomato_clone_reactjs/assets/asset 11.avif",
       item: "La Pino'z Pizza",
       altName: "La Pino'z Pizza",
     },
-    { image: "public/assets/asset 12.avif", item: "Subway", altName: "Subway" },
+    { image: "/zomato_clone_reactjs/assets/asset 12.avif", item: "Subway", altName: "Subway" },
     {
-      image: "public/assets/asset 13.avif",
+      image: "/zomato_clone_reactjs/assets/asset 13.avif",
       item: "Jay Bhavani Vadapav",
       altName: "Jay Bhavani Vadapav",
     },
     {
-      image: "public/assets/asset 14.avif",
+      image: "/zomato_clone_reactjs/assets/asset 14.avif",
       item: "Burger King",
       altName: "Burger King",
     },
     {
-      image: "public/assets/asset 15.avif",
+      image: "/zomato_clone_reactjs/assets/asset 15.avif",
       item: "La Milano Pizzeria",
       altName: "La Milano Pizzeria",
     },
@@ -53,7 +48,7 @@ export default function Delivery() {
 
   const boxCardItem = [
     {
-      boxImage: "public/assets/asset 18.avif",
+      boxImage: "/zomato_clone_reactjs/assets/asset 18.avif",
       altName: "PVR Cafe",
       foodStallName: "PVR Cafe",
       foodItemInfo: "Fast Food,Momos, Bever...",
@@ -62,7 +57,7 @@ export default function Delivery() {
       duration: "10 min.",
     },
     {
-      boxImage: "public/assets/asset 17.avif",
+      boxImage: "/zomato_clone_reactjs/assets/asset 17.avif",
       altName: "La Pinos's Pizza",
       foodStallName: "La Pinos's Pizza",
       foodItemInfo: "Pizza, Pasta, Italian, Frency....",
@@ -71,7 +66,7 @@ export default function Delivery() {
       duration: "20 min.",
     },
     {
-      boxImage: "public/assets/Bablu Shree Farali Center.avif",
+      boxImage: "/zomato_clone_reactjs/assets/Bablu Shree Farali Center.avif",
       altName: "Bablu Shree Farali Center",
       foodStallName: "Bablu Shree Farali Center",
       foodItemInfo: "Fast Food, South Indian",
@@ -80,7 +75,7 @@ export default function Delivery() {
       duration: "25 min.",
     },
     {
-      boxImage: "public/assets/Poult.avif",
+      boxImage: "/zomato_clone_reactjs/assets/Poult.avif",
       altName: "Poult",
       foodStallName: "Poult",
       foodItemInfo: "Fast Food,Burger, Bever...",
@@ -89,7 +84,7 @@ export default function Delivery() {
       duration: "13 min.",
     },
     {
-      boxImage: "public/assets/McDonald's.avif",
+      boxImage: "/zomato_clone_reactjs/assets/McDonald's.avif",
       altName: "Mc Donald's",
       foodStallName: "Mc Donald's",
       foodItemInfo: "Burger, Fast Food, Dessert...",
@@ -98,7 +93,7 @@ export default function Delivery() {
       duration: "22 min.",
     },
     {
-      boxImage: "public/assets/Jay Bhavani Vadapav.avif",
+      boxImage: "/zomato_clone_reactjs/assets/Jay Bhavani Vadapav.avif",
       altName: "Jay Bhavani",
       foodStallName: "Jay Bhavani",
       foodItemInfo: "Street Food, Fast Food and More",

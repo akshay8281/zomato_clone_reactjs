@@ -16,7 +16,7 @@ export default function Header() {
                 <Link to="/">
                   <img
                     className="logo"
-                    src="public/assets/Asset_0.avif"
+                    src="/zomato_clone_reactjs/assets/Asset_0.avif"
                     alt="Logo"
                   />
                 </Link>
@@ -72,7 +72,7 @@ export default function Header() {
                 <Link className="" to="/" target="_self">
                   <img
                     className="sub-nav-a-img"
-                    src="public/assets/asset 1.avif"
+                    src="/zomato_clone_reactjs/assets/asset 1.avif"
                     alt=""
                   />
                 </Link>
@@ -93,7 +93,7 @@ export default function Header() {
                 <Link className="" to="/dinning" target="_self">
                   <img
                     className="sub-nav-a-img"
-                    src="public/assets/asset 2.avif"
+                    src="/zomato_clone_reactjs/assets/asset 2.avif"
                     alt=""
                   />
                 </Link>
