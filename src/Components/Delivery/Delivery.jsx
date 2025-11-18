@@ -7,12 +7,18 @@ export default function Delivery() {
   // Round Card Item 1
   const roundCardItem_1 = [
 
-    { image: "public/assets/asset_3.avif", item: "Pizza", altName: "Pizza" },
-    { image: "public/assets/asset_4.avif", item: "Burger", altName: "Burger" },
-    { image: "public/assets/asset_5.avif", item: "Sandwich", altName: "Sandwich" },
-    { image: "public/assets/asset_6.avif", item: "Biryani", altName: "Biryani" },
-    { image: "public/assets/asset_8.avif", item: "Thali", altName: "Thali" },
-    { image: "public/assets/asset_7.avif", item: "Cake", altName: "Cake" },
+    { image: "/zomato_clone_reactjs/assets/asset_3.avif", item: "Pizza", altName: "Pizza" },
+    { image: "/zomato_clone_reactjs/assets/asset_4.avif", item: "Burger", altName: "Burger" },
+    { image: "/zomato_clone_reactjs/assets/asset_5.avif", item: "Sandwich", altName: "Sandwich" },
+    { image: "/zomato_clone_reactjs/assets/asset_6.avif", item: "Biryani", altName: "Biryani" },
+    { image: "/zomato_clone_reactjs/assets/asset_8.avif", item: "Thali", altName: "Thali" },
+    { image: "/zomato_clone_reactjs/assets/asset_7.avif", item: "Cake", altName: "Cake" },
+    // { image: "public/assets/asset_3.avif", item: "Pizza", altName: "Pizza" },
+    // { image: "public/assets/asset_4.avif", item: "Burger", altName: "Burger" },
+    // { image: "public/assets/asset_5.avif", item: "Sandwich", altName: "Sandwich" },
+    // { image: "public/assets/asset_6.avif", item: "Biryani", altName: "Biryani" },
+    // { image: "public/assets/asset_8.avif", item: "Thali", altName: "Thali" },
+    // { image: "public/assets/asset_7.avif", item: "Cake", altName: "Cake" },
   ];
   // Round Card Item 2
 
