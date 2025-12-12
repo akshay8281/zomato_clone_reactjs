@@ -29,7 +29,7 @@ export default function Dinning() {
   const dinningBoxData = [
     {
       dinningBoxImage:
-        "Assets_2/Three Qurter Indian.avif",
+        "/zomato_clone_reactjs/Assets_2/Three Qurter Indian.avif",
       imgAltName: "Three Quarter Indian",
       dinningPlace: "Three Quarter Indian",
       foodItems: "North Indian, Continental, Italia...",
