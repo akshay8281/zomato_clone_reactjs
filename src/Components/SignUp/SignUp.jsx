@@ -4,8 +4,8 @@ import "./SignUp.css";
 
 export default function SignUp() {
   return (
-    <>
-      <section className="signup">
+    <div className="signup-page">
+      <section className="signup-card">
         <div className="signup-container">
           <h1>Sign Up</h1>
 
@@ -35,7 +35,7 @@ export default function SignUp() {
             <img
               className="GoogleLogo"
               src="/zomato_clone_reactjs/assets_2/GoogleLogo.png"
-              alt="GoogleLogo"
+              alt="Google Logo"
             />
             Continue with Google
           </button>
@@ -48,6 +48,6 @@ export default function SignUp() {
           </p>
         </div>
       </section>
-    </>
+    </div>
   );
 }

@@ -82,7 +82,7 @@ ul li {
 .header-btn {
   position: sticky;
   top: 0px;
-  padding-block: 14px;
+  padding-block: 8px;
   color: white;
   background-color: white;
   z-index: 5;
