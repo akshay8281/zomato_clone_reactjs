@@ -39,7 +39,7 @@ export default function Login() {
             <button className="google-button flex">
               <img
                 className="GoogleLogo"
-                src="/zomato_clone_reactjs/assets_2/GoogleLogo.png"
+                src="assets_2/GoogleLogo.png"
                 alt="GoogleLogo"
               />
               Continue with Google

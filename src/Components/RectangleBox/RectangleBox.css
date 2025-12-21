@@ -35,7 +35,7 @@
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 0.829)
     ),
-    url("/zomato_clone_reactjs/assets_2/Winners_Zomato.jpg");
+    url("assets_2/Winners_Zomato.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -54,7 +54,7 @@
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 0.829)
     ),
-    url("/zomato_clone_reactjs/assets_2/NewlyOpen.jpg");
+    url("assets_2/NewlyOpen.jpg");
 }
 
 .rectangle-slot:nth-child(3) {
@@ -62,7 +62,7 @@
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 0.829)
     ),
-    url("/zomato_clone_reactjs/assets_2/GreatBuffets.jpg");
+    url("assets_2/GreatBuffets.jpg");
 }
 
 .rectangle-slot:nth-child(4) {
@@ -70,5 +70,5 @@
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 0.829)
     ),
-    url("/zomato_clone_reactjs/assets_2/Best_Luxury.jpg");
+    url("assets_2/Best_Luxury.jpg");
 }

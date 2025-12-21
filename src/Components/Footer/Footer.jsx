@@ -48,7 +48,7 @@ export default function Footer() {
             <div className="footer-logo col-50">
               <img
                 className="footer-logo-img"
-                src="/zomato_clone_reactjs/assets/Asset_0.avif"
+                src="assets/Asset_0.avif"
                 alt="Logo"
               />
             </div>
@@ -135,7 +135,7 @@ export default function Footer() {
                 <Link to="#">
                   <img
                     className="download-img"
-                    src="/zomato_clone_reactjs/assets/GooglePay.png"
+                    src="assets/GooglePay.png"
                     alt="Google Play"
                   />
                 </Link>
@@ -143,7 +143,7 @@ export default function Footer() {
                 <Link to="#">
                   <img
                     className="download-img"
-                    src="/zomato_clone_reactjs/assets/AppleStore.png"
+                    src="assets/AppleStore.png"
                     alt="App Store"
                   />
                 </Link>
