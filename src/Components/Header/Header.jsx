@@ -14,7 +14,11 @@ export default function Header() {
               <div className="nav-left">
                 {/* LOGO */}
                 <Link to="/">
-                  <img className="logo" src="assets/Asset_0.avif" alt="Logo" />
+                  <img
+                    className="logo"
+                    src="/zomato_clone_reactjs/assets/Asset_0.avif"
+                    alt="Logo"
+                  />
                 </Link>
 
                 {/* INPUT GROUP */}
@@ -68,7 +72,7 @@ export default function Header() {
                 <Link className="" to="/" target="_self">
                   <img
                     className="sub-nav-a-img"
-                    src="assets/asset 1.avif"
+                    src="/zomato_clone_reactjs/assets/asset 1.avif"
                     alt=""
                   />
                 </Link>
@@ -89,7 +93,7 @@ export default function Header() {
                 <Link className="" to="/dinning" target="_self">
                   <img
                     className="sub-nav-a-img"
-                    src="assets/asset 2.avif"
+                    src="/zomato_clone_reactjs/assets/asset 2.avif"
                     alt=""
                   />
                 </Link>

@@ -1,104 +1,166 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
-.login-section {
-  height: 500px;
-  width: 450px;
-  border-radius: 8px;
-  justify-content: center;
-  background-color: white;
-  margin: 2rem auto;
-  border: 2px solid black;
+/* =========================
+   Global Base
+   ========================= */
+:root {
+  font-size: clamp(14px, 1.1vw, 16px);
 }
 
-.login-container {
-  flex-direction: column;
+body {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.Login-text {
-  font-size: 40px;
-  font-weight: 700;
-}
-
+/* =========================
+   Utilities
+   ========================= */
 .flex {
   display: flex;
   align-items: center;
 }
+
+/* =========================
+   Page Centering (NO BORDER)
+   ========================= */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+
+/* =========================
+   Login Card (BORDER HERE)
+   ========================= */
+.login-card {
+  width: min(450px, 100%);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   Container
+   ========================= */
+.login-container {
+  flex-direction: column;
+  width: 100%;
+  gap: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+
+/* =========================
+   Heading
+   ========================= */
+.Login-text {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+/* =========================
+   Input Section
+   ========================= */
+.input-tel {
+  display: flex;
+  width: 100%;
+  margin-block: clamp(1.2rem, 3vw, 2rem);
+}
+
 .country-code {
-  width: 6rem;
-  height: 40px;
-  text-align: center;
+  width: clamp(4.5rem, 20%, 6rem);
+  height: 42px;
   border: 1px solid rgb(171, 165, 165);
   border-right: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
 }
 
 .contactBar {
-  margin-block: 30px;
-  margin-left: -5px;
-  width: 220px;
-  height: 40px;
+  flex: 1;
+  height: 42px;
   border: 1px solid rgb(171, 165, 165);
   border-left: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 0 5px 5px 0;
+  padding-left: 12px;
 }
 
-input {
-  padding-left: 15px;
-  border-left: none;
-}
-
+/* =========================
+   Buttons
+   ========================= */
 .btn-login {
   flex-direction: column;
+  width: 100%;
+  gap: 0.9rem;
 }
 
 .btn-login button {
-  width: 20rem;
-  height: 40px;
-  font-size: 17px;
+  width: 100%;
+  height: 42px;
+  font-size: 1rem;
   border-radius: 5px;
   border: 1px solid rgb(171, 165, 165);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
 }
 
 .OTP {
-  margin-bottom: 20px;
   background-color: #e23744;
   color: white;
 }
 
-.Email-button {
-  margin-block: 20px;
-  justify-content: center;
+.Email-button,
+.google-button {
+  background-color: white;
 }
 
-.btn-login p {
-  font-size: 20px;
-}
-
+/* =========================
+   Icons & Images
+   ========================= */
 .mail-icon {
   color: red;
-  font-size: 20px;
-  margin-right: 10px;
-}
-
-.google-button {
-  justify-content: center;
+  font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .GoogleLogo {
-  width: 25px;
-  margin-right: 5px;
+  width: clamp(18px, 4vw, 24px);
+  height: auto;
 }
 
+/* =========================
+   Divider Text
+   ========================= */
+.btn-login p {
+  font-size: 1.05rem;
+  margin: 0.2rem 0;
+}
+
+/* =========================
+   Bottom Section
+   ========================= */
 .login-bottom-section {
-  margin-top: 60px;
-  font-size: 18px;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  font-size: 1.05rem;
+  white-space: nowrap;
 }
 
 .createAccount {
   color: #e23744;
-  margin-left: 10px;
+  margin-left: 0.5rem;
 }
 
-
+/* =========================
+   Small Screens
+   ========================= */
+@media (max-width: 480px) {
+  .Login-text {
+    font-size: 1.6rem;
+  }
+}
