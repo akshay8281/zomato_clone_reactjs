@@ -8,7 +8,7 @@
 }
 
 body {
-   background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 a {
@@ -82,37 +82,169 @@ ul li {
 .header-btn {
   position: sticky;
   top: 0px;
-  padding-block: 8px;
   color: white;
   background-color: white;
-  z-index: 5;
+  z-index: 15;
   margin-top: 35px;
 }
 
-.sub-nav-btn i {
+.sub-nav-btn-d i {
   margin-right: 10px;
 }
+.sub-nav-btn-d {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 
-.sub-nav-btn {
-  margin: 0px 15px 0px 0px;
-  text-align: center;
-  padding: 8px 10px;
+  width: auto;
+  min-width: unset;
+  max-width: unset;
+
+  padding: 7px 12px; /* slightly reduced */
+  font-size: 13px; /* safer base size */
+  white-space: nowrap;
+
   border-radius: 7px;
-  background-color: #ffffff;
-  justify-content: center;
   border: 1px solid rgb(203, 203, 203);
-  font-size: 15px;
-  color: grey;
+  background-color: #ffffff;
+  color: #666;
   cursor: pointer;
-  width: 9rem;
 }
 
-.sub-nav-btn:hover {
+.sub-nav-btn-d:hover {
   background-color: #f4f4f4;
 }
 
 .crownGold {
   color: gold;
+}
+
+@media (max-width: 576px) {
+  .dinning-nav-single-row {
+    gap: 6px;
+    padding: 6px 6px;
+    overflow-x: auto; /* allows scroll instead of cut */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .dinning-nav-single-row::-webkit-scrollbar {
+    display: none; /* Chrome */
+  }
+
+  .dinning-nav-single-row .sub-nav-btn-d {
+    font-size: 11px !important;
+    padding: 5px 8px !important;
+    border-radius: 6px;
+
+    min-width: auto; /* IMPORTANT */
+    width: auto;
+    flex-shrink: 0;
+
+    line-height: 1.2;
+  }
+
+  .sub-nav-btn-d i {
+    margin-right: 6px; /* reduce icon gap */
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .sub-nav-btn-d {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dinning-nav-single-row {
+    gap: 6px;
+    padding: 6px 4px;
+  }
+
+  .dinning-nav-single-row .sub-nav-btn-d {
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+  }
+}
+
+/* ===================================================== */
+/* FORCE Dinning Nav Button Visibility (≤756px FIX) */
+/* ===================================================== */
+
+.dinning-nav-single-row {
+  display: flex;
+  flex-wrap: nowrap; /* FORCE single row */
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.dinning-nav-single-row .sub-nav-btn-d {
+  flex-shrink: 0;
+  white-space: nowrap;
+  margin: 0 !important;
+  min-width: max-content;
+  border-radius: 7px;
+}
+
+/* ================= MOBILE (≤480px) ================= */
+@media (max-width: 480px) {
+  .dinning-nav-single-row {
+    gap: 6px;
+    padding: 6px 4px;
+  }
+
+  .dinning-nav-single-row .sub-nav-btn-d {
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+  }
+}
+
+/* ================= MOBILE LARGE (481–756px) ================= */
+@media (min-width: 481px) and (max-width: 756px) {
+  .dinning-nav-single-row {
+    gap: 8px;
+    padding: 8px 6px;
+  }
+
+  .dinning-nav-single-row .sub-nav-btn-d {
+    font-size: 13px !important;
+    padding: 7px 12px !important;
+  }
+}
+
+/* ================= TABLET (757–991px) ================= */
+@media (min-width: 757px) and (max-width: 991px) {
+  .dinning-nav-single-row {
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .dinning-nav-single-row .sub-nav-btn-d {
+    font-size: 14px !important;
+    padding: 8px 14px !important;
+  }
+}
+
+/* ================= DESKTOP (≥992px) ================= */
+@media (min-width: 992px) {
+  .dinning-nav-single-row {
+    gap: 14px;
+  }
+
+  .dinning-nav-single-row .sub-nav-btn-d {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+/* ================= LARGE SCREENS (≥1200px) ================= */
+@media (min-width: 1200px) {
+  .dinning-nav-single-row .sub-nav-btn-d {
+    font-size: 16px;
+    padding: 10px 22px;
+  }
 }
 
 /* Dinning-Hero-Section */
@@ -124,7 +256,6 @@ ul li {
 .dinning-hero-img {
   width: 100%;
 }
-
 
 /* Media Query Section */
 
@@ -211,10 +342,6 @@ ul li {
 
   .nav-buttons {
     justify-content: center;
-  }
-
-  .sub-nav-btn {
-    margin: 5px;
   }
 
   .box-cards-main h2 {
@@ -358,10 +485,6 @@ ul li {
     height: 200px;
     margin: 20px auto;
     font-size: 18px;
-  }
-
-  .sub-nav-btn {
-    margin: 10px;
   }
 
   .card-container-box {

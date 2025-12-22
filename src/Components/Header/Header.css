@@ -140,3 +140,15 @@
   color: #555555; /* grey text for inactive */
   border-bottom: none;
 }
+
+.sub-nav-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: white;
+}
+
+body.hide-sub-nav .sub-nav-header {
+  display: none;
+}
+

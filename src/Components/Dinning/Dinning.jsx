@@ -3,8 +3,23 @@ import { Link } from "react-router-dom";
 import RectangleBox from "../RectangleBox/RectangleBox";
 import "./Dinning.css";
 import DinningBoxCard from "../DinningBox/DinningBoxCard";
+import { useEffect } from "react";
 
 export default function Dinning() {
+  useEffect(() => {
+    const onScroll = () => {
+      const dinningNav = document.querySelector(".js-dinning-nav");
+      if (!dinningNav) return;
+
+      const top = dinningNav.getBoundingClientRect().top;
+
+      document.body.classList.toggle("hide-sub-nav", top <= 0);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   // Rectangle Box
   const rectBoxItem = [
     {
@@ -132,28 +147,19 @@ export default function Dinning() {
 
       {/* Dinning Nav-button */}
 
-      <section className="header-btn">
-        <div className="container nav-buttons flex">
-          <div>
-            <button className="sub-nav-btn flex">
-              <i className="fa-solid fa-list-ul"></i>
-              Filter
-            </button>
-          </div>
-          <div>
-            <button className="sub-nav-btn">
-              <i className="crownGold fa-solid fa-crown"></i> Gold
-            </button>
-          </div>
-          <div>
-            <button className="sub-nav-btn">Ratings 4.0+</button>
-          </div>
-          <div>
-            <button className="sub-nav-btn">Outdoor Seating</button>
-          </div>
-          <div>
-            <button className="sub-nav-btn">Open Now</button>
-          </div>
+      <section className="header-btn js-dinning-nav">
+        <div className="container nav-buttons dinning-nav-single-row">
+          <button className="sub-nav-btn-d">
+            <i className="fa-solid fa-list-ul"></i> Filter
+          </button>
+
+          <button className="sub-nav-btn-d">
+            <i className="crownGold fa-solid fa-crown"></i> Gold
+          </button>
+
+          <button className="sub-nav-btn-d">Ratings 4.0+</button>
+          <button className="sub-nav-btn-d">Outdoor Seating</button>
+          <button className="sub-nav-btn-d">Open Now</button>
         </div>
       </section>
 

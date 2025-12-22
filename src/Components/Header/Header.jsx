@@ -64,7 +64,7 @@ export default function Header() {
 
       {/* Sub NavBar */}
 
-      <section className="sub-nav-header">
+      <section className="sub-nav-header js-sub-nav">
         <div className="container">
           <div className="sub-nav-slots flex">
             <div className="sub-nav-slot-1 flex ali">
