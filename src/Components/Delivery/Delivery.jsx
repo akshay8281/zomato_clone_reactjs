@@ -133,25 +133,20 @@ export default function Delivery() {
       {/* <Nav-Buttons */}
 
       <section className="nav-header-btns">
-        <ul className="container nav-btn-main flex">
-          <li>
-            <button className="sub-nav-btn flex">
-              <i className="fa-solid fa-list-ul"></i>
-              Filter
-            </button>
-          </li>
-          <li>
-            <button className="sub-nav-btn">Ratings 4.0+</button>
-          </li>
-          <li>
-            <button className="sub-nav-btn">Pure Veg</button>
-          </li>
-          <li>
-            <button className="sub-nav-btn">
-              Cuisines <i className="fa-solid fa-angle-down"></i>
-            </button>
-          </li>
-        </ul>
+        <div className="container nav-btn-main flex">
+          <button className="sub-nav-btn flex">
+            <i className="fa-solid fa-list-ul"></i>
+            Filter
+          </button>
+
+          <button className="sub-nav-btn">Ratings 4.0+</button>
+
+          <button className="sub-nav-btn">Pure Veg</button>
+
+          <button className="sub-nav-btn">
+            Cuisines <i className="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
       </section>
 
       {/* Round Slider 1 and Round Slider 2 */}

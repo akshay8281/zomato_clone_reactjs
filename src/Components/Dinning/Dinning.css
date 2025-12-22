@@ -95,15 +95,12 @@ ul li {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-
   width: auto;
   min-width: unset;
   max-width: unset;
-
   padding: 7px 12px; /* slightly reduced */
   font-size: 13px; /* safer base size */
   white-space: nowrap;
-
   border-radius: 7px;
   border: 1px solid rgb(203, 203, 203);
   background-color: #ffffff;
@@ -117,6 +114,55 @@ ul li {
 
 .crownGold {
   color: gold;
+}
+
+/* ===================================================== */
+/* MOBILE & TABLET – FORCE ONE ROW WITHOUT SCROLL */
+/* ===================================================== */
+@media (max-width: 991px) {
+  .header-btn .dinning-nav-single-row {
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    gap: 4px !important;
+    overflow: hidden !important;
+  }
+
+  .header-btn .dinning-nav-single-row .sub-nav-btn-d {
+    font-size: 10px !important; /* SHRINK TEXT */
+    padding: 4px 6px !important; /* SHRINK BUTTON */
+    border-radius: 5px !important;
+
+    white-space: nowrap;
+    flex-shrink: 1 !important; /* ALLOW SHRINK */
+  }
+
+  .header-btn .sub-nav-btn-d i {
+    margin-right: 4px !important;
+    font-size: 10px !important; /* SHRINK ICON */
+  }
+}
+
+/* ===================================================== */
+/* VERY SMALL MOBILE (≤360px) */
+/* ===================================================== */
+@media (max-width: 360px) {
+  .header-btn .dinning-nav-single-row .sub-nav-btn-d {
+    font-size: 9px !important;
+    padding: 3px 5px !important;
+  }
+
+  .header-btn .sub-nav-btn-d i {
+    font-size: 9px !important;
+  }
+}
+
+/* Base – Desktop already OK */
+.header-btn .dinning-nav-single-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden; /* NO SCROLL */
 }
 
 @media (max-width: 576px) {
@@ -839,11 +885,6 @@ ul li {
   .footer-social-links a i {
     margin-block: 7px;
     font-size: 22px;
-  }
-
-  .scroll-icon {
-    padding: 20px;
-    font-size: 25px;
   }
 }
 
